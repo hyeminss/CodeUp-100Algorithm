@@ -97,3 +97,42 @@ int main(){
 }
 
 @ 1015
+#include <stdio.h>
+int main()
+{    float a;
+    scanf("%f", &a);
+    printf("%.2f" , a);
+}
+
+@ 1017
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d %d %d", a, a, a);
+}
+
+@ 1018
+#include<stdio.h>
+int main(){
+    int h,m;
+    scanf("%d:%d", &h, &m);
+    printf("%d:%d",h,m);
+}
+
+@ 1019
+#include<stdio.h>
+int main(){
+    int y,m,d;
+    scanf("%d.%d.%d",&y,&m,&d);
+    printf("%04d.%02d.%02d",y,m,d);
+    return 0;}
+// 월이나 일이 한 자리 수일 시 앞에 0을 붙여서 2자리 수로 맞춰주어야 함
+
+@ 1020
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d-%d",&a,&b);
+    printf("%06d%06d",a,b);
+}
