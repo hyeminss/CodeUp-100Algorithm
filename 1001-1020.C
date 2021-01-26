@@ -53,7 +53,7 @@ int main(){
     printf("\u2514\u2534\u2518\n");
 }
 
-@ 1009
+@ 1010
 #include<stdio.h>
 int main()
 {
@@ -64,7 +64,7 @@ int main()
     return 0;
 }
 
-@ 1010
+@ 1011
 #include<stdio.h>
 int main(){
     char x='p';
@@ -72,7 +72,7 @@ int main(){
     printf("%c", x);
 }
 
-@ 1011
+@ 1012
 #include<stdio.h>
 int main(){
     float n=1.414213;
@@ -80,10 +80,20 @@ int main(){
     printf("%f",n);
 }
 
-@ 1012
+@ 1013
 #include<stdio.h>
 int main(){
     int a=1,b=2;
     scanf("%d %d",&a,&b);
     printf("%d %d",a,b);
 }
+
+@ 1014
+#include<stdio.h>
+int main(){
+    char x='a', y='b';
+    scanf("%c %c", &x, &y);
+    printf("%c %c", y, x);
+}
+
+@ 1015
