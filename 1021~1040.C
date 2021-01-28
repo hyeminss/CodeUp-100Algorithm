@@ -56,3 +56,80 @@ int main(){
     scanf("%d:%d:%d",&h,&m,&s);
     printf("%d",m);
 }
+
+@ 1027
+#include<stdio.h>
+int main(){
+    int d,m,y;
+    scanf("%04d.%05d.%02d",&y,&m,&d);
+    printf("%02d-%02d-%04d",d,m,y);
+}
+
+@ 1028
+#include<stdio.h>
+int main(){
+    unsigned int n;
+    scanf("%u", &n);
+    printf("%u", n);
+}
+
+@ 1029
+#include<stdio.h>
+int main(){
+    double d;
+    scanf("%lf", &d);// double(long float) 형식으로 입력
+    printf("%.11lf",d);
+    return 0;
+}
+
+@ 1030
+#include<stdio.h>
+int main(){
+    long long int n;
+    scanf("%lld", &n);
+    printf("%lld", n);
+}
+
+@ 1031
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    printf("%o",n);
+    return 0;
+}
+
+@ 1032
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    printf("%x",n);
+}
+
+@ 1033
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    printf("%X",n);
+}
+
+@ 1034
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%o",&n);
+    printf("%d",n);
+}
+
+@ 1035 
+#include<stdio.h>
+int main(void)
+{
+    int num;
+    scanf("%x",&num);
+    printf("%o", num);
+    return 0;
+}
+ 
