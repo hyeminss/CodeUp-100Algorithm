@@ -132,4 +132,46 @@ int main(void)
     printf("%o", num);
     return 0;
 }
- 
+
+@ 1036
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%c",&a);
+    printf("%d",a);
+}    
+
+@ 1037
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    printf("%c",n);
+}
+
+@ 1038
+#include <stdio.h>
+int main()
+{   long long a,b;    
+    scanf("%lld %lld", &a, &b);   
+    printf("%lld", b+a);
+    return 0;}
+// 입력되는 정수가 -1073741824 ~ 1073741824 이라 long 사용
+//int 데이터형은 %d로 입출력하고,
+//long long int 데이터형은 %lld로 입출력
+
+@ 1039 
+#include<stdio.h>
+int main(){
+    long long a,b;
+    scanf("%lld %lld", &a, &b);
+    printf("%lld\n", a+b);
+}// 1038과 동일
+
+@ 1040
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d", &a);
+    printf("%d", -a);
+}
