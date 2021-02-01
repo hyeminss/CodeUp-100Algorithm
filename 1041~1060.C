@@ -64,3 +64,42 @@ int main()
     return 0;
 }}
 
+@ 1047 
+#include<stdio.h>
+int main(){
+    int a;
+    scanf("%d",&a);
+    printf("%d", a<<1); //a을 2배
+    return 0;
+}
+
+@ 1048 
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d", a << b);
+    return 0;
+}//예를 들어 1 3 이 입력되면 1을 2^3(8)배 하여 출력한다.
+
+@ 1049
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a>b)
+    printf("1");
+    else printf("0");
+    return 0;
+}
+
+@ 1050
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a==b)
+    printf("1");
+    else printf("0");
+    return 0;
+}
