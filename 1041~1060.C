@@ -103,3 +103,58 @@ int main(){
     else printf("0");
     return 0;
 }
+
+@ 1051
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(b>=a){
+        printf("1");
+    }
+    else printf("0");
+    return 0;
+}
+
+@ 1052 
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    if(a!=b){
+        printf("1");
+    }
+    else printf("0");
+    return 0;
+}
+
+@ 1053 
+#include <stdio.h>
+int main()
+{   int a;
+    scanf("%d", &a);
+    printf("%d",!a);
+    return 0;
+}
+
+@ 1054 
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d", &a, &b);
+    printf("%d",b&&a);
+    return 0;
+}
+//논리연산자 && 는 주어진 2개의 논리값이 모두 참(1) 일 때에만 1(참)로 계산하고, 그 외의 경우에는 0(거짓) 으로 계산한다.
+
+@ 1055
+#include <stdio.h>
+int main()
+{
+    int a,b;
+    scanf("%d %d", &a, &b);
+    printf("%d",b||a);
+    return 0;
+}
+// 둘 중 하나라도 참일 경우에도 연산값이 참이 되는 ||연산자
