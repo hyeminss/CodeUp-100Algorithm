@@ -158,3 +158,57 @@ int main()
     return 0;
 }
 // 둘 중 하나라도 참일 경우에도 연산값이 참이 되는 ||연산자
+
+@ 1056 
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d",a!=b);
+    return 0;
+}
+//a!=b는 a와 b가 다를 경우 참이 되어 1이 출력되며 같을 경우 거짓이 되어 0이 출력
+
+@ 1057
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d",a==b);
+    return 0;
+}
+//참/거짓이 같을 때에만 참이 계산되어야 함
+
+@ 1058
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d",(a==0)&&(0==b));
+    return 0;
+}
+//모두 거짓인 경우에만 참을 출력해야 함
+//a==b의 조건을 만족하며 둘 중 하나가 1이 참이 아니면 1을 출력해야 함
+
+@ 1059
+#include<stdio.h>
+int main(){
+    int n;
+    scanf("%d",&n);
+    printf("%d",~n);
+    return 0;
+}
+//~n = -n - 1
+//-n = ~n + 1 과 같은 관계로 표현됨
+
+@ 1060
+#include<stdio.h>
+int main(){
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("%d",a&b);
+    return 0;
+}
+//비트단위(bitwise)연산자 &를 사용
+//비트단위의 AND연산은 두 개의 비트열이 주어졌을 때 둘 다 1인 부분만 1이 되고 둘 중 하나만 1이거나 둘 다 0인 경우 0이 됨
+
